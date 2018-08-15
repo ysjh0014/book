@@ -18,30 +18,30 @@
 
 **hbase-env.sh**
 
-export JAVA\_HOME=/opt/jdk1.8.0\_161                           *这里换成你自己的jdk路径
+export JAVA\_HOME=/opt/jdk1.8.0\_161                           *这里换成你自己的jdk路径
 
 export HBASE\_MANAGES\_ZK=false                             *这里改为false是禁用hbase自带的zookeeper，使用外部的zookeeper,                                                                                                     因为zookeeper不仅要监控hbase,还要监控其他的
 
-**hbase-site.xml**
+hbase-site.xml
 
-<property>  
-<name>hbase.zookeeper.property.dataDir</name>  
-<value>/opt/zookeeper-3.4.5-cdh5.3.6/data/zkData</value>                    *这个是你的zookeeper集群配置文件里面dataDir的路径  
-</property>  
-<property>  
-<name>hbase.rootdir</name>  
-<value>hdfs://192.168.83.110:8020/hbase</value>  
-</property>  
-<property>  
-<name>hbase.cluster.distributed</name>  
-<value>true</value>  
-</property>  
-<property>  
-<name>hbase.zookeeper.quorum</name>  
-<value>cdh0,cdh1,cdh2</value>  
+```java
+<property>
+<name>hbase.zookeeper.property.dataDir</name> 
+<value>/opt/zookeeper-3.4.5-cdh5.3.6/data/zkData</value>   *这个是你的zookeeper集群配置文件里面dataDir的路径
 </property>
-
-**regionserver**
+<property>
+<name>hbase.rootdir</name>
+<value>hdfs://192.168.83.110:8020/hbase</value>
+</property>
+<property>
+<name>hbase.cluster.distributed</name>
+<value>true</value>
+</property>
+<property>
+<name>hbase.zookeeper.quorum</name>
+<value>cdh0,cdh1,cdh2</value>
+</property>
+```
 
 cdh0
 
@@ -53,21 +53,13 @@ cdh2
 
 bin/start-hbase.sh
 
-![avatar](大数据/hbase/hbase集群搭建png/20180810141221125.png)
-
 使用hbase的命令行客户端查看hbase是否能够正常运行
 
 bin/hbase  shell
 
-![avatar](大数据/hbase/hbase集群搭建png/20180810141331635.png)
-
 list:   查看表
 
-![avatar](大数据/hbase/hbase集群搭建png/20180810141502563.png)
-
 status:    查看集群状态
-
-![avatar](大数据/hbase/hbase集群搭建png/20180810141520278.png)
 
 version:    查看集群版本
 
@@ -79,10 +71,6 @@ bin/zkCli.sh
 
 ls /
 
-rmr  hbase
-
-![avatar](大数据/hbase/hbase集群搭建png/20180810141909237.png)
+rmr  hbase
 
 然后重新启动Hbase集群
-
-
