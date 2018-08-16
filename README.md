@@ -1,6 +1,6 @@
 # 写给读者的话
 
-这里是我的大学学习历程笔记
+这里是我的大学学习历程
 
 源码地址: https://github.com/ysjh0014/bookGitbook
 
