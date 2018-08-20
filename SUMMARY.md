@@ -40,9 +40,9 @@
   - Oozie
   - Kafka
   - Hbase
-    - [habse初识](大数据/hbase/hbase初识.md)
+    - [初识](大数据/hbase/hbase初识.md)
 
-    - [habase集群搭建](大数据/hbase/hbase集群搭建.md)
+    - [集群搭建](大数据/hbase/hbase集群搭建.md)
 
 - ### 数据库
 
@@ -51,23 +51,22 @@
       - [基本语法]()
   - #####非关系型数据库
     - redis
-      - [redis初识](数据库/非关系型数据库/redis/redis初识.md)
+      - [初识](数据库/非关系型数据库/redis/redis初识.md)
 
-      - [redis安装](数据库/非关系型数据库/redis/redis安装.md)
+      - [安装](数据库/非关系型数据库/redis/redis安装.md)
 
-      - [redis五大常用数据类型](数据库/非关系型数据库/redis/redis五大常用数据类型.md)
+      - [五大常用数据类型](数据库/非关系型数据库/redis/redis五大常用数据类型.md)
 
-      - [redis持久化](数据库/非关系型数据库/redis/redis持久化.md)
+      - [持久化](数据库/非关系型数据库/redis/redis持久化.md)
 
       - 
 - ### Docker
 
   - 
-
 - ### 数据结构
 
   - 
-
 - ### 面试题
 
   - 
+
