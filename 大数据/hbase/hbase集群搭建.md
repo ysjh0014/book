@@ -8,21 +8,21 @@
 
 角色分配如下：
 
-机器一：  namenode   datanode   regionserver   hmaster     zookeeper
+机器一： `namenode   datanode   regionserver   hmaster     zookeeper`
 
-机器二：  datanode     regionserver     zookeeper
+机器二： `datanode     regionserver     zookeeper`
 
-机器三：  datanode     regionserver     zookeeper
+机器三： `datanode     regionserver     zookeeper`
 
 首先当然是上传解压，，然后修改配置文件
 
-**hbase-env.sh**
+**`hbase-env.sh`**
 
-export JAVA\_HOME=/opt/jdk1.8.0\_161                           *这里换成你自己的jdk路径
+`export JAVA\_HOME=/opt/jdk1.8.0\_161`             这里换成你自己的jdk路径
 
-export HBASE\_MANAGES\_ZK=false                             *这里改为false是禁用hbase自带的zookeeper，使用外部的zookeeper,                                                                                                     因为zookeeper不仅要监控hbase,还要监控其他的
+`export HBASE\_MANAGES\_ZK=false`            这里改为false是禁用hbase自带的zookeeper，使用外部的zookeeper,                                                                                                     因为zookeeper不仅要监控hbase,还要监控其他的
 
-hbase-site.xml
+`hbase-site.xml`
 
 ```java
 <property>
@@ -43,34 +43,36 @@ hbase-site.xml
 </property>
 ```
 
+`regionserver`
+
+```key
 cdh0
-
-cd h1
-
+cdh1
 cdh2
+```
 
 配置好之后就可以启动hbase集群了，当然前提是你的hadoop和zookeeper已经准备好了
 
-bin/start-hbase.sh
+`bin/start-hbase.sh`
 
 使用hbase的命令行客户端查看hbase是否能够正常运行
 
-bin/hbase  shell
+`bin/hbase  shell`
 
-list:   查看表
+`list`:   查看表
 
-status:    查看集群状态
+`status`:    查看集群状态
 
-version:    查看集群版本
+`version`:    查看集群版本
 
 如果在命令行客户端中出现错误，就进入zookeeper把hbase删除，然后重新启动hbase，具体步骤如下
 
 在zookeeper目录下
 
-bin/zkCli.sh
+`bin/zkCli.sh`
 
-ls /
+`ls /`
 
-rmr  hbase
+`rmr  hbase`
 
 然后重新启动Hbase集群

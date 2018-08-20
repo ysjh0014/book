@@ -14,12 +14,28 @@
 
 - ### 大数据
 
-  - ##### hadoop
+  - ##### Hadoop
     - [hdfs]()
     - [yarn]()
     - [mapreduce]() 
-  - ##### hive
-  - hbase
+  - Zookeeper
+    - zookeeper初识
+
+      - [概述](大数据/Zookeeper/zookeeper初识/概述.md)
+
+      - [特点](大数据/Zookeeper/zookeeper初识/特点.md)
+
+      - [数据结构](大数据/Zookeeper/zookeeper初识/数据结构.md)
+
+      - [应用场景](大数据/Zookeeper/zookeeper初识/应用场景.md)
+
+    - zookeeper安装
+
+    - zookeeper内部原理
+
+    - zookeeper实战
+  - ##### Hive
+  - Hbase
     - [habse初识](大数据/hbase/hbase初识.md)
 
     - [habase集群搭建](大数据/hbase/hbase集群搭建.md)
@@ -42,14 +58,10 @@
       - 
 - ### Docker
 
-  - []()
-
+  - 
 - ### 数据结构
 
-  - []()
-
+  - 
 - ### 面试题
-
-  - []()
 
   - 
