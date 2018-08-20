@@ -19,22 +19,28 @@
     - [yarn]()
     - [mapreduce]() 
   - Zookeeper
-    - zookeeper初识
+    - 初识
 
-      - [概述](大数据/Zookeeper/zookeeper初识/概述.md)
+      - [概述](大数据/Zookeeper/初识/概述.md)
 
-      - [特点](大数据/Zookeeper/zookeeper初识/特点.md)
+      - [特点](大数据/Zookeeper/初识/特点.md)
 
-      - [数据结构](大数据/Zookeeper/zookeeper初识/数据结构.md)
+      - [应用场景](大数据/Zookeeper/初识/应用场景.md)
 
-      - [应用场景](大数据/Zookeeper/zookeeper初识/应用场景.md)
+    - 安装
 
-    - zookeeper安装
+      - [本地模式](大数据/Zookeeper/安装/本地模式.md)
 
-    - zookeeper内部原理
+      - [分布式模式](大数据/Zookeeper/安装/分布式模式.md)
 
-    - zookeeper实战
+    - 内部原理
+
+    - 实战
   - ##### Hive
+  - Sqoop
+  - Flume
+  - Oozie
+  - Kafka
   - Hbase
     - [habse初识](大数据/hbase/hbase初识.md)
 
