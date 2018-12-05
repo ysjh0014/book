@@ -18,9 +18,9 @@
 
 **`hbase-env.sh`**
 
-`export JAVA\_HOME=/opt/jdk1.8.0\_161`             这里换成你自己的jdk路径
+`export JAVA\_HOME=/opt/jdk1.8.0\_161`             这里换成你自己的jdk路径
 
-`export HBASE\_MANAGES\_ZK=false`            这里改为false是禁用hbase自带的zookeeper，使用外部的zookeeper,                                                                                                     因为zookeeper不仅要监控hbase,还要监控其他的
+`export HBASE\_MANAGES\_ZK=false`            这里改为false是禁用hbase自带的zookeeper，使用外部的zookeeper,                                                                                                     因为zookeeper不仅要监控hbase,还要监控其他的
 
 `hbase-site.xml`
 
@@ -75,4 +75,4 @@ cdh2
 
 `rmr  hbase`
 
-然后重新启动Hbase集群
+然后重新启动Hbase
