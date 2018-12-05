@@ -75,4 +75,4 @@ cdh2
 
 `rmr  hbase`
 
-然后重新启动Hbase
+然后重新启动HB
