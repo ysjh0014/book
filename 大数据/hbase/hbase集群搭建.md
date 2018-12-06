@@ -75,4 +75,9 @@ cdh2
 
 `rmr  hbase`
 
+<<<<<<< HEAD
+
 然后重新启动hbase
+===
+
+然后重新启动
